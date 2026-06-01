@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella Williams | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: #F4F3EF;
+            color: #111111;
+            font-family: "IBM Plex Mono", monospace;
+            line-height: 1.7;
+            padding: 50px 50px 50px 18%;
+        }
+        /* HERO SECTION */
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Ensures everything is centered */
+            text-align: center;
+            border: 3px double #111111;
+            background-color: #FBFBFA;
+            padding: 40px;
+            margin-bottom: 150px;
+        }
+        .hero h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 400;
+            letter-spacing: 2px;
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .hero p {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #111111;
+            border: 1px solid #111111;
+            padding: 4px 12px;
+            background-color: #F4F3EF;
+            margin: 20px 0 40px 0;
+        }
+        /* Nudging these two lines slightly to the right */
+        .scroll-indicator, .browser-link {
+            padding-left: 10px; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .scroll-indicator {
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            margin: 10px 0;
+        }
+        .browser-link {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: #111111;
+            text-decoration: underline;
+            margin-top: 10px;
+            transition: color 0.2s ease;
+        }
+        .browser-link:hover { color: #555555; }
+
+        /* SECTIONS */
+        .section { max-width: 650px; margin: 0 auto 100px auto; }
+        .section-title { font-family: 'DM Serif Display', serif; font-size: 2rem; font-weight: 400; margin-bottom: 40px; border-bottom: 2px solid #111111; padding-bottom: 10px; text-transform: uppercase; }
+        .text-content p { margin-bottom: 20px; font-size: 0.95rem; text-align: justify; }
+        .project-subtitle { font-family: 'DM Serif Display', serif; font-size: 1.5rem; font-weight: 400; margin-bottom: 15px; text-transform: uppercase; }
+        .articles-grid { display: grid; grid-template-columns: 1fr; gap: 35px; }
+        .article-card { border: 1px dashed #111111; padding: 25px; background-color: #FBFBFA; transition: background-color 0.2s ease; }
+        .article-card:hover { background-color: #EAE9E4; }
+        .article-meta { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; text-transform: uppercase; color: #555555; margin-bottom: 12px; }
+        .article-title { font-family: 'DM Serif Display', serif; font-size: 1.4rem; line-height: 1.2; margin-bottom: 12px; }
+        .article-excerpt { font-size: 0.9rem; color: #222222; margin-bottom: 20px; }
+        .read-link { color: #111111; text-decoration: underline; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        .design-grid { display: grid; grid-template-columns: 1fr; gap: 40px; justify-items: center; }
+        .design-item { width: 100%; max-width: 550px; background-color: #EAE9E4; border: 2px solid #111111; padding: 15px; }
+        .design-item img { width: 100%; height: auto; display: block; border: 1px solid #111111; }
+        .contact-box { border: 3px double #111111; background-color: #FBFBFA; padding: 35px; text-align: center; }
+        .contact-box h3 { font-family: 'DM Serif Display', serif; font-size: 1.6rem; margin-bottom: 15px; text-transform: uppercase; }
+        .contact-links { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; align-items: center; }
+        .contact-btn { font-family: 'IBM Plex Mono', monospace; display: block; padding: 12px 20px; border: 1px solid #111111; color: #111111; text-decoration: none; font-size: 0.85rem; background-color: #F4F3EF; width: 100%; max-width: 440px; transition: all 0.2s ease; }
+        .contact-btn:hover { background-color: #111111; color: #F4F3EF; }
+        @media (max-width: 768px) { body { padding: 60px 10%; } }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Isabella Williams</h1>
+        <p>Portfolio</p>
+        <div class="scroll-indicator">[ Scroll Down ]</div>
+        <a href="https://isabella-williams-portfolio.netlify.app" target="_blank" rel="noopener noreferrer" class="browser-link">or open website in full screen browser tab</a>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">About</h2>
+        <div class="text-content">
+            <p>Isabella Williams is a Boise-based media professional with a strong creative instinct and a passion for storytelling. She excels at transforming complex information into clear, engaging content that highlights the human side of the news. Whether reporting in the field or working behind the scenes, Isabella brings a sharp eye for fresh perspective and commitment to producing impactful stories.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Why work with me?</h2>
+        <div class="text-content">
+            <p>I approach every project with a drive to get things right. I thrive in fast-paced environments, adapt quickly when things shift and am always looking for new ways to build my skills and grow.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Writing Examples</h2>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div class="article-meta">THE ARBITER // APRIL 2026</div>
+                <div class="article-title">Poked to pieces: Ivy Hunter’s rise in Boise’s tattoo scene</div>
+                <div class="article-excerpt">A deep-dive feature tracking local artist Ivy Hunter's creative path, style evolutions and distinct impact within the growing Boise underground tattoo community.</div>
+                <a href="https://www.arbiteronline.com/2026/04/28/poked-to-pieces-ivy-hunters-rise-in-boises-tattoo-scene/" target="_blank" rel="noopener noreferrer" class="read-link">Read Entry</a>
+            </div>
+            <div class="article-card">
+                <div class="article-meta">THE ARBITER // APRIL 2026</div>
+                <div class="article-title">Inside Boise State’s Spring 2026 BFA Exhibition</div>
+                <div class="article-excerpt">On-the-ground arts reporting and visual documentation reviewing the culminating showcase of Boise State's fine arts graduates and emerging local talent.</div>
+                <a href="https://www.arbiteronline.com/2026/04/14/inside-boise-states-spring-2026-bfa-exhibition/" target="_blank" rel="noopener noreferrer" class="read-link">Read Entry</a>
+            </div>
+            <div class="article-card">
+                <div class="article-meta">BOISE STATE ATHLETICS // NOVEMBER 2025</div>
+                <div class="article-title">Serving on Every Front</div>
+                <div class="article-excerpt">A compelling human-interest feature profile exploring the dual life of a standout Boise State student-athlete balancing university sports commitments with active military service.</div>
+                <a href="https://broncosports.com/news/2025/11/13/b-1-features-serving-on-every-front" target="_blank" rel="noopener noreferrer" class="read-link">Read Entry</a>
+            </div>
+            <div class="article-card">
+                <div class="article-meta">THE ARBITER // JULY 2025</div>
+                <div class="article-title">From manager to teammate: The unlikely rise of Brennan Ramirez</div>
+                <div class="article-excerpt">The definitive profile tracking Brennan Ramirez's relentless transition from support staff to a critical, rostered presence on the court.</div>
+                <a href="https://www.arbiteronline.com/2025/07/23/from-manager-to-teammate-the-unlikely-rise-of-brennan-ramirez/" target="_blank" rel="noopener noreferrer" class="read-link">Read Entry</a>
+            </div>
+            <div class="article-card">
+                <div class="article-meta">THE ARBITER // MARCH 2026</div>
+                <div class="article-title">Local arcade temporarily transforms into an artistic oasis</div>
+                <div class="article-excerpt">On-the-scene feature reporting from Realms Arcade's community collage night, highlighting an accessible, sliding-scale creative "third space" built for local connection.</div>
+                <a href="https://www.arbiteronline.com/2026/03/08/local-arcade-temporarily-transforms-into-an-artistic-oasis/" target="_blank" rel="noopener noreferrer" class="read-link">Read Entry</a>
+            </div>
+            <div class="article-card">
+                <div class="article-meta">BOISE STATE ATHLETICS // DECEMBER 2025</div>
+                <div class="article-title">From Dubai to Boise</div>
+                <div class="article-excerpt">A sweeping cross-cultural human angle feature highlighting the unique backgrounds, adjustments and international identities within Boise State sports programs.</div>
+                <a href="https://broncosports.com/news/2025/12/11/b-1-features-from-dubai-to-boise" target="_blank" rel="noopener noreferrer" class="read-link">Read Entry</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Design Work</h2>
+        <div class="design-grid">
+            <div class="design-item"><img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/FashionTalk.png" alt="Fashion Talk"></div>
+            <div class="design-item"><img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/LifesPlaybook.png" alt="Lifes Playbook"></div>
+            <div class="design-item"><img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/CourtChronicles.png" alt="Court Chronicles"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="text-content">
+            <h3 class="project-subtitle">3D Design Portfolio</h3>
+            <p><strong>You're currently viewing this project!</strong> Developed as a culminating senior capstone, my portfolio serves as a clean interface designed to showcase my media layout concepts and digital work directly on the open web.</p>
+            <p style="margin-top: 25px;"><a href="https://github.com/isabellawilliamsmedia" target="_blank" rel="noopener noreferrer" class="read-link">View GitHub Source →</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="contact-box">
+            <h3>CONTACT</h3>
+            <div class="contact-links">
+                <a href="mailto:isabellawilliamsmedia@gmail.com" class="contact-btn">isabellawilliamsmedia@gmail.com</a>
+                <a href="https://www.linkedin.com/in/isabellawilliamsmedia/" target="_blank" rel="noopener noreferrer" class="contact-btn">LINKEDIN // PROFILE</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
