@@ -1,3 +1,1 @@
-# Isabella-williams-portfolio
-
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/isabellawilliamsmedia/Isabella-williams-portfolio)
+# This is my portfolio website that I used to place inside the 3D computer model!
